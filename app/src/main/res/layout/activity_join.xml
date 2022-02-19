@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".auth.JoinActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                style="@style/EditTextStyle"
+                android:theme="@style/EditTextStyle"
+                android:background="@color/white">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailArea"
+                    android:layout_width="match_parent"
+                    android:textColorHint="#4e4e4e"
+                    android:layout_height="wrap_content"
+                    android:hint="E-mail" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                style="@style/EditTextStyle"
+                android:theme="@style/EditTextStyle"
+                android:background="@color/white"
+                app:counterEnabled="true"
+                app:counterMaxLength="10">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordArea"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:textColorHint="#4e4e4e"
+                    android:layout_height="wrap_content"
+                    android:hint="Password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditTextStyle"
+                android:theme="@style/EditTextStyle"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                app:counterEnabled="true"
+                app:counterMaxLength="10">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordCheckArea"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:textColorHint="#4e4e4e"
+                    android:layout_height="wrap_content"
+                    android:hint="Password Check" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditTextStyle"
+                app:counterMaxLength="8"
+                android:theme="@style/EditTextStyle"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nicknameArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="닉네임" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextStyle"
+                    android:theme="@style/EditTextStyle"
+                    android:layout_margin="10dp"
+                    android:background="@color/white">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/phoneNumberArea"
+                        android:layout_width="match_parent"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:hint="휴대폰 번호" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/requestCertify_btn"
+                    android:layout_weight="1"
+                    android:text="인증 요청"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/certificationLayout"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextStyle"
+                    android:theme="@style/EditTextStyle"
+                    android:layout_margin="10dp"
+                    android:background="@color/white">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/certifyCode_Area"
+                        android:layout_width="match_parent"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:hint="인증 번호" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/certify_btn"
+                    android:layout_weight="1"
+                    android:text="확인"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="150dp"
+                android:src="@drawable/blank_profile_picture"
+                android:visibility="gone"
+                android:layout_height="150dp"/>
+
+
+
+            <Button
+                android:id="@+id/joinBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:enabled="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="회원가입" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

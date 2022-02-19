@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "440811869468",
+    "project_id": "openphonememo",
+    "storage_bucket": "openphonememo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440811869468:android:86c565f2cf0ccebdf696d9",
+        "android_client_info": {
+          "package_name": "com.joonmyoung.openphonebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440811869468-nq5jgirfe2aa5e7god44h9kiq7ro8ijk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA_9OCGumOCJ750BWpKv6yU8rN36SIxd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440811869468-nq5jgirfe2aa5e7god44h9kiq7ro8ijk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

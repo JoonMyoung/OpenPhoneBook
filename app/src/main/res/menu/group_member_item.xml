@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/group_member_add_btn"
+            android:title="그룹원 초대하기"
+            />
+        <item
+            android:id="@+id/memo_add_btn"
+            android:title="메모 추가하기"
+            />
+
+
+    </group>
+
+</menu>

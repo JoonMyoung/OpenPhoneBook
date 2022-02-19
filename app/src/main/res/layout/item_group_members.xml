@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/groupMemberProfileImage"
+        android:layout_margin="10dp"
+        android:src="@drawable/blank_profile_picture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:id="@+id/groupMemberNicknameTextView"
+        app:layout_constraintStart_toEndOf="@id/groupMemberProfileImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/groupMemberMessageTextView"
+        android:text="닉네임"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#595959"
+        android:padding="8dp"
+        android:id="@+id/groupMemberMessageTextView"
+        app:layout_constraintTop_toBottomOf="@id/groupMemberNicknameTextView"
+        app:layout_constraintStart_toEndOf="@id/groupMemberProfileImage"
+        android:layout_marginLeft="18dp"
+        android:text="자기소개"
+        android:textSize="15dp"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/GroupMemberDeleteImage"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_person_off_24"
+        android:visibility="gone"
+        tool:visibility = "visible"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
